@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# SQLite database files
+.sql
+
+# Bot config
+config.json
