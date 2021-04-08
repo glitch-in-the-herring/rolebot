@@ -13,6 +13,7 @@ class Selfrole(commands.Cog):
 		guild = ctx.guild
 		author = ctx.author
 		role_id = db.search_role(alias)
+		print(role_id)
 		role = guild.get_role(role_id)
 		await author.add_roles(role, reason="Selfbot role")
 		await ctx.send("role given")
