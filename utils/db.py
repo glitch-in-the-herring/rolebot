@@ -11,7 +11,7 @@ def add_role_alias(role_id, alias):
 		[alias, role_id]
 	)
 
-def add_role_category(role_id, category)
+def add_role_category(role_id, category):
 	c.execute("INSERT INTO category (category, role_id) VALUES (?, ?)",
 		[category, role_id]
 	)

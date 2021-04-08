@@ -50,7 +50,7 @@ except IOError:
 		else:
 			config["prefix"] = prefix			
 		if not sysadmin_id:
-			config["sysadmin_id"] = input("Please enter your user ID, orthe sysadmin's ID: ")
+			config["sysadmin_id"] = input("Please enter your user ID, or the sysadmin's ID: ")
 		else:
 			config["sysadmin_id"] = sysadmin_id
 
