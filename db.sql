@@ -1,6 +1,6 @@
 CREATE TABLE alias (
 	alias TEXT,
-	role_id INTEGER NOT NULL
+	role_id INTEGER NOT NULL,
 	PRIMARY KEY(alias)
 )
 
