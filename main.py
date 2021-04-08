@@ -67,4 +67,7 @@ intents = discord.Intents(
 
 bot = commands.Bot(command_prefix=prefix, intents=intents)
 
+bot.load_extension("utils.manage")
+bot.load_extension("utils.selfrole")
+
 bot.run(token)
