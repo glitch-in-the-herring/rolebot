@@ -38,19 +38,17 @@ try:
 			sysadmin_id = config["sysadmin_id"]
 except IOError:
 	with open("config.json", "w") as f:
-		print("Welcome to the setup for Necromancer-Bot!")
+		print("Welcome to the setup for Rolebot!")
 		config = {}
 
 		if not token:
-			config["token"] = input("Please enter your bot's token: ")
-		else:
+			token = input("Please enter your bot's token: ")
 			config["token"] = token
-		if not prefix:
-			config["prefix"] = input("Please enter your bot's prefix: ")
 		else:
-			config["prefix"] = prefix			
+			config["token"] = token			
 		if not sysadmin_id:
-			config["sysadmin_id"] = input("Please enter your user ID, or the sysadmin's ID: ")
+			sysadmin_id = input("Please enter your user ID, or the sysadmin's ID: ")
+			config["sysadmin_id"] = sysadmin_id
 		else:
 			config["sysadmin_id"] = sysadmin_id
 

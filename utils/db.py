@@ -19,6 +19,6 @@ def add_role_category(role_id, category):
 #def update_role(role_id, cateogry, alias):
 
 def search_role(alias):
-	return c.execute("SELECT role_id FROM alias WHERE alias=?")
+	return c.execute("SELECT role_id FROM alias WHERE alias=?", [alias])
 
 #def delete_role(role_id):
