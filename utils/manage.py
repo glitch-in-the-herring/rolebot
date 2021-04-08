@@ -16,6 +16,7 @@ class Manage(commands.Cog):
 		if len(category) != 0:
 			db.add_role_category(role.id, category)
 		db.commit()
+		await ctx.send("role added sucessfully")
 
 def setup(bot):
 	bot.add_cog(Manage(bot))			

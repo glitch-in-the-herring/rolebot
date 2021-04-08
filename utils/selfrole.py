@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import utils.db as db
 
 class Selfrole(commands.Cog):
 	def __init__(self, bot):
@@ -14,6 +15,7 @@ class Selfrole(commands.Cog):
 		role_id = db.search_role(alias)
 		role = guild.get_role(role_id)
 		await author.add_roles(role, reason="Selfbot role")
+		await ctx.send("role given")
 
 def setup(bot):
 	bot.add_cog(Selfrole(bot))		
